@@ -85,7 +85,7 @@ file.write(headerstring)
 drugcount = 0;
 
 for drug in sum_data:
-	datastring = drug[0] + ',' + str(drug[1]) + ',' + str(drug[2]) + '\n'
+	datastring = drug[0] + ',' + str(drug[1]) + ',' + str(int(drug[2])) + '\n'
 	file.write(datastring)
 	drugcount = drugcount + 1
 	if math.ceil(drugcount/printrate) == drugcount/printrate:				#Print progress statement for large datasets
